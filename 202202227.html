@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="자기소개" content="진로 소개 및 자기소개">
+    <title>202202227 진로</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/aboutme.css" rel="stylesheet">
+    <link href="css/dream.css" rel="stylesheet">
+    <link href="css/plan.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"> 
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <div class="title">
+                <h3 onclick="js:mainStart()">포트폴리오</h3>
+            </div>
+            <ul class="nav_menu">
+                <li><a onclick="js:aboutMeStart()">자기소개</a></li>
+                <li><a onclick="js:dreamStart()">관심 기업</a></li>
+                <li><a onclick="js:planStart()">계획 및 목표</a></li>
+            </ul>
+        </nav>
+        <section id="main">
+            <div class="main_introduce">
+                <h2>"현명하고 지혜롭게"</h3>
+                <h3>이름의 뜻처럼 현명하고 지혜롭게 공학적으로 사회문제를 해결하고싶은</h3>
+                <h3>공주대학교 소프트웨어학과 22학번 홍현지의 포트폴리오입니다</h3>
+                <img src="img/main_img.gif" alt="메인 사진">
+            </div>
+            <div class="main_skill" data-aos="fade-up">
+                <h3>관심 기술</h3>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td><img src="img/androidStudio.png"></td>
+                            <td><img src="img/spring.png"></td>
+                            <td><img src="img/springBoot.png"></td>
+                          </tr>
+                      <tr>
+                        <td><img src="img/aws.png"></td>
+                        <td><img src="img/java.png"></td>
+                        <td><img src="img/mysql.png"></td>
+                      </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="main_project" >
+                <div data-aos="fade-up">
+                <h3>프로젝트</h3>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td><img src="img/primitiveWebsite.png"></td>
+                            <td><span>프로젝트명</span><br>프리미티브 홍보 심리테스트 페이지<br><br>
+                                <span>프로젝트 설명</span><br>프리미티브 동아리 홍보를 위해 흥미를 유도할 수 있는 <br>심리테스트 페이지를 제작하고자 함<br><br>
+                                <span>사용 기술</span><br>HTML, CSS, JavaScript, Github<br><br>
+                                <span>날짜</span><br>2024.01.24 ~ 2024.03.25<br><br>
+                                <span>깃허브 주소</span><br><a href="https://github.com/hyeonji0401/JoinPrimitive">https://github.com/hyeonji0401/JoinPrimitive</a>
+                            </td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+                </div>
+                <br>
+                <div data-aos="fade-up">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td><img src="img/javaProject.png"></td>
+                                <td><span>프로젝트명</span><br>공주대학교 행정 앱<br><br>
+                                    <span>프로젝트 설명</span><br>학과 수업 프로젝트로 학교 내의 민원 시스템을 효율적으로 바꾸기 위해 <br>기존의 전화 방식에서 모바일 어플로의 변환을 목적으로 기획함<br><br>
+                                    <span>사용 기술</span><br>Java, SpringBoot, AndroidStudio, Github<br><br>
+                                    <span>날짜</span><br>2023.09.24 ~ 2023.12.06<br><br>
+                                    <span>깃허브 주소</span><br><a href="https://github.com/hyeonji0401/KNU_Administration">https://github.com/hyeonji0401/KNU_Administration</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <br>
+                <br>
+                <div data-aos="fade-up">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td><img src="img/TT.png"></td>
+                                <td><span>프로젝트명</span><br>TT<br><br>
+                                    <span>프로젝트 설명</span><br>카카오 로그인API, 카카오 지도API를 활용하여 택시 동승자를 <br>구하는 어플을 동아리 스터디 목적으로 기획함<br><br>
+                                    <span>사용 기술</span><br>Java, SpringBoot, AndroidStudio, Github<br><br>
+                                    <span>날짜</span><br>2023.09.24 ~ 2023.12.06<br><br>
+                                    <span>깃허브 주소</span><br><a href="https://github.com/hyeonji0401/KNU_Administration">https://github.com/hyeonji0401/KNU_Administration</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <br>
+                <canvas id="loading"></canvas>
+                <h3>프로젝트는 추후에 더 추가될 예정입니다!</h3>
+            </div>
+        </section>
+        <section id="aboutMe">
+            <br>
+            <div class="introduce_aboutme">
+                <h3>성장 과정</h3>
+                <div>
+                  <p>고등학교 정보 시간에 처음으로 코딩을 접하게 되었습니다. <br>
+                    단순한 블록코딩이었지만 복잡한 문제를 해결하고, 직접 만든 프로그램이 작동하는 것을 보면서 성취감을 느꼈습니다.<br>
+                    이 성취감으로 인해 개발자가 되고 싶다는 막연한 꿈을 꾸기 시작했습니다<br>
+                    그러던 중, 고등학교 재학 당시 진로 관련 발표에서 디지털 취약계층에 대해 알게 되었습니다.<br>
+                    저에게는 항상 새롭고 편리하게 다가왔던 디지털화가 오히려 불편함으로 다가올 수 있다는 점이 큰 충격이었습니다.<br> 
+                    이후로 저는 정보 접근성이 부족한 사람들의 어려움을 이해하고, 이를 해결하는 데 기여할 수 있는 개발자가 되기로 결심했습니다.<br>
+                    이 목표를 이루기 위해 공주대학교 소프트웨어학과에 입학한 후, 코딩 동아리인 PRIMITIVE에 가입하여 다양한 프로젝트에 참여하며 공부를 이어갔습니다.<br>
+                    프로젝트를 진행하면서 항상 고등학교 때의 마음가짐을 잊지 않고 접근성에 집중했습니다.<br>
+                    UI 설계와 사용자 설명에 많은 시간을 투자했지만, 디자인에는 재능이 부족하다는 것을 깨달았습니다.<br>
+                    그럼에도 불구하고 도움이 될 수 있는 방법을 찾기 위해 앱 개발, 웹디자인, 서버 API 개발 등 여러 분야를 경험해보았습니다.<br>
+                    결국, 사용자에게 편리한 웹 및 앱을 제공하는 데 어디서나 필수적인 역할을 하는 서버 개발자로서의 길을 선택하게 되었습니다.<br>
+                    서버 개발을 통해 사용자 경험을 최적화하고, 누구나 쉽게 접근할 수 있는 환경을 구축하는 데 기여하고자 합니다.<br>
+                    앞으로도 이 목표를 이루기 위해 꾸준히 노력하며,<br>
+                    디지털 취약계층을 포함한 모든 사용자가 편리하게 사용할 수 있는 소프트웨어를 개발하고자 합니다.<br>
+                     </p>
+
+                </div>
+                
+            </div> 
+            <div class="issue_aboutme">
+                <h2 class="issue_title">디지털 소외계층이란?</h2>
+                <span class="highlight">빠르게 발전하는 디지털 기술에 적응하지 못하고 스마트폰, 키오스크, 온라인 예매 등 디지털 기기, 서비스 등을 이용하지 못해 소외되는 계층을 의미함</span>
+                <br>
+                <div class="issue_img">
+                    <img src="img/digital.jpg">
+                </div>
+                <br>
+                <p>'디지털 소외계층'은 세상이 디지털화되면서 오히려 불편함을 크게 느끼게 되는 경우가 많음<br>
+                   또한 온라인 거래, 은행 업무, 정보 접근 등이 대부분 디지털로 이루어지기 때문에<br>
+                   디지털 기술에 익숙하지 않은 이들은 디지털 사기나 개인정보 유출과 같은 위협에 쉽게 노출될 확률이 높음<br>
+                   그러므로 디지털 소외계층을 지원함으로써 모든 사람이 디지털화의 편리성을 누릴 수 있도록 하는 것이 중요함
+                </p>
+                <h2 class="howTo">어떻게 격차를 줄일 수 있을까?</h2>
+                <p>각 사진에 마우스 커서를 올려서 확인해보세요!</p>
+                <table>
+                    <tbody>
+                        <div class="howToImg">
+                            <tr>
+                                <td ><img src="img/teaching.jpg"><p>국가적 차원에서의<br>교육 지원</p></td>
+                                <td><img src="img/hourglass.jpg"><p>앞사람이 조금 느려도 <br>기다리고 서로 돕기</p></td>
+                                <td><img src="img/tech.png"><p>모든 사람들이 <br>이용하기 쉽도록 <br>디자인, 설계하기</p></td>
+                            </tr>
+                        </div>
+                        <tr>
+                            <td><span>디지털 교육</span></td>
+                            <td><span>기다리기(서로 돕기)</span></td>
+                            <td><span>기술적 배려</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="issue_myOpinion">
+                    <h2>나의 의견</h2>
+                    <p>'공학'이란 문제를 발견하고 이에 대한 기술적 해결책을 제시하는 학문이라고 합니다.<br>
+                      그러나 '공학'을 통해 발전한 기술이 오히려 누군가에게는 새로운 문제가 되었다는 사실은 큰 충격으로 다가왔습니다.<br>
+                      특히 고등학교 때 처음 알게된 단어였던 '디지털 취약계층'이 현재까지도 이어지는 문제라는 점에서 우리는 더 주목해야 합니다.<br>
+                      공학을 배우는 입장에서 아무리 혁신적이고 좋은 기술이어도 누군가에게 문제가 된다면,<br>
+                      이를 새로운 문제로 직면하고 다시 해결책을 찾는 것이 공학의 참된 의미라고 생각합니다.<br>
+                      기술의 발전도 좋지만 사용자와 함께 성장하는 형태로 이루어져야 한다고 생각합니다.<br>
+                      앞으로도 이 마음가짐을 지니며 공학자로서 성장하고 싶습니다.
+                </div>
+            </div> 
+            <div class="error_aboutme">
+                <div class="error_project">
+                    <h2>프로젝트 오류 해결</h2>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td><img src="img/board.jpg"></td>
+                                <td><span>공주대학교 행정 앱</span><br>
+                                    <p>게시판 화면 구현 중 게시판 화면 UI불러올 때,<br>생명주기 onCreate에서 NULLPOINTER 오류 발생</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="error_reason">
+                    <h3>&#128073;원인&#128072;</h3>
+                    <p>: 네트워크 요청 처리 전, 즉 서버에서 아직 결과가 도착하기 전에 데이터 처리를 시도하여 오류 발생함<br>
+                        데이터를 받아서 UI를 띄우는 로직을 수행하는 상황인데 데이터가 더 늦게 도착하는 상황 발생<br>
+                        이로 인해 UI 설정 시 아무런 데이터를 받지 못하고 UI 업로드를 해서 NULL POINTER 오류가 일어남<br>
+                        이는 서버에서 데이터를 받아 올때 retrofit의 enqueue()함수를 통해 데이터를 받아오기 떄문에 발생함<br>
+                        retrofit의 enqueue()는 비동기화로 이루어지기 때문에 서버 응답이 오기 전에 다음 처리를 시도하게 됨<br>
+                        이로 인해 데이터가 다 오기 전에 UI업로드를 진행하여 nullPointer오류가 발생한 것이었음<br>
+                    </p>
+                </div>
+                <div class="error_solve">
+                    <h3>&#128073;해결방식&#128072;</h3>
+                    <div class="error_solve_code">
+                        <img src="img/solveCode-1.png"><img src="img/solveCode-2.png">
+                    </div>
+                    <p class="solve_title">비동기와 동기의 혼합으로 해결</p>
+                    <br>
+                    <div class="error_solve_detail">
+                        <p><mark>동기</mark></p>
+                        <p>: retrofit의 execute()를 이용하여 네트워크 요청을 동기화하여 응답을 받은 후 데이터 처리를 하도록 수정함</p>
+                        <br>
+                        <p><mark>비동기</mark></p>
+                        <p>: 서버 응답 시까지 UI를 띄우지않으면 사용자 입장에서는 답답할 수 있기 때문에
+                            UI를 띄우는 메인 스레드와 <br>네트워크 요청을 처리하는 백그라운 스레드로 나누어 비동기화로 수행되도록 함<br>
+                        </p>
+                    </div>
+                </div>
+                <div class="error_solve_improve">
+                    <h3>&#128073;아쉬운 점&#128072;</h3>
+                    <p>: 새로고침 기능과 데이터 응답 대기 아이콘을 추가하면 사용자 편의성이 극대화되었을 것<br>이는 서버 배포까지 하지못해서 구현하지 못함</p>
+                </div>
+            </div>
+            <div class="intersting_skill">
+              <p id="skill_title">관심 기술</p>
+              <div>
+                <p class="spring_title">&#128073;스프링/스프링 부트&#128072;</p>
+              <table>
+                <tbody>
+                  <tr>
+                    <td><img src="img/spring.png" class="spring_img"></td>
+                    <td><p class="spring_content">스프링은 웹 애플리케이션을 쉽고 빠르게 만들 수 있도록 도와주는 자바의 웹 프레임워크이다. <br>
+                      스프링 부트는 스프링(Spring) 프레임워크에 톰캣(Tomcat)이라는 서버를 내장하고 여러 편의 기능들을 추가하여 개발자들 사이에서 꾸준히 인기를 누리고 있다.<br>
+                      톰캣은 클라이언트의 요청을 해석하여 그에 맞는 자바 프로그램을 실행한 후 그 결과를 응답해 주는 웹 애플리케이션 서버이다.<br>
+                      또한, 스프링/스프링 부트는 기본 보안이 잘되어있어있는 튼튼한 웹 프레임워크라고 할 수 있다.<br>
+                      이러한 장점으로 인해 전자정부표준프레임워크로 지정되었으며, 많은 기업에서 사용하고 있다.<br>
+                      자바 프레임워크인 만큼 자바에 대한 높은 이해도가 필요하며 최근에는 코틀린을 지원하여 코틀린+스프링 조합으로 개발하는 사람들도 늘고 있다고 한다.</p></td>
+                  </tr>
+                </tbody>
+              </table>
+              <p class="fintech_title">&#128073;핀테크&#128072;</p>
+              <table>
+                <tbody>
+                  <tr>
+                    <td><img src="img/fintech.jpg" class="fintech_img"></td>
+                    <td><p class="fintech_content">핀테크(fintech)는 Finance(금융)와 Technology(기술)의 합성어다.<br>
+                      말 그대로 금융 서비스와 정보기술(IT)의 융합을 통한 금융서비스 및 산업의 변화를 통칭한다<br>
+                      특히 모바일을 통한 결제, 송금, 자산관리, 크라우드 펀딩 등 금융과 IT기술의 융합을 의미한다<br>
+                      모바일뱅킴, 앱카드, 애플페이, 삼성페이 등을 예시로 들 수 있다<br>
+                      예민한 돈을 다루는 기술인 만큼 높은 보안성과 안전성이 요구된다<br>
+                      또한 개발자들은 단순 개발 지식뿐만 아니라 금융 지식이 요구되는 경우도 많다<br>
+                      주요 기술로는 인공지능, 블록체인, 클라우드, 빅데이터 등이 있다<br>
+                   </p></td>
+                  </tr>
+                </tbody>
+                </table>
+              </div>
+            </div>
+        </section>
+        <section id="dream">
+            <div class="dream_about">
+                <img src="img/komsco.jpg">
+                <div class="dream_slogan">
+                    <p class="slogan_vision">조폐를 산업으로 재창조 하는 글로벌 선도 기업</p>
+                </div>
+                <div class="dream_mission">
+                    <p class="slogan_mission">"제조를 넘어 디지털로 가짜 없는 세상을 실현한다"</p>
+                    <div class="mission">
+                        <p class="mission1">○ 제조를 넘어 <span>디지털로</span></p>
+                        <p>공사의 역할이 화폐·신분증 등 실물 기반 보안제품 제조에 국한되지 않고, 디지털 기술을 활용한 사업으로 확장됨</p>
+                        <p class="mission2">○ <span>가짜 없는</span> 세상을 실현한다.</p>
+                        <p>온·오프라인 지급결제 및 신원인증 수단의 위변조 방지를 통해 국민경제 생활의 안정과 발전에 기여한다는 공사의<br>궁극적 사명을 의미함</p>
+                    </div>
+                </div>
+                <div class="dream_value">
+                    <h3>핵심가치</h3>
+                    <table>
+                        <tbody>
+                                <tr>
+                                    <td ><img src="img/vision_value1.png"><p>혁신경영</p></td>
+                                    <td><img src="img/vision_value2.png"><p>상생발전</p></td>
+                                    <td><img src="img/vision_value3.png"><p>변화선도</p></td>
+                                    <td><img src="img/vision_value4.png"><p>지속성장</p></td>
+                                </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="dream_major">
+                    <h3>주요 ICT 사업</h3>
+                    <table>
+                     <tbody>
+                        <tr>
+                          <td><img src="img/chak.png"></td>
+                          <td><img src="img/MobileIdentification_logo.png"></td>
+                          <td><img src="img/digital_poa_img02.png"></td>
+                        </tr>
+                        <tr>
+                          <th>모바일 상품권</th>
+                          <th>모바일 신분증</th>
+                          <th>디지털 위임장</th>
+                        </tr>
+                        <tr>
+                          <td>모바일 상품권 발행 및 운영 서비스 위탁 대행 서비스</td>
+                          <td>플라스틱 신분증과 동일한 법적 효력을 갖는 국가 신분증으로 블록체인 기반의 위변조가 불가능한 신분증 정보를 개인의 모바일에 저장하고, 필요시 상황에 맞는 정보만을 제공하는 신원, 자격 인증 공공 서비스</td>
+                          <td>종이 위임장과 인감증명서를 모바일 신분증과 전자서명 기능을 활용, 디지털로 전환하여 모바일 기기에서 작성, 서명, 제출이 가능한 비대면 서비스</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                </div>
+                <div class="dream_talented">
+                    <h3>KOMSCO 인재상</h3>
+                    <table>
+                        <tbody>
+                                <tr>
+                                    <td ><img src="img/talent1.png"><p>도전인재</p></td>
+                                    <td><img src="img/talent2.png"><p>창의인재</p></td>
+                                    <td><img src="img/talent3.png"><p>성장인재</p></td>
+                                    <td><img src="img/talent4.png"><p>포용인재</p></td>
+                                </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="dream_about_ICT">
+                    <h3>ICT 직무 기술서</h3>
+                    <table>
+                        <tbody>
+                          <tr>
+                            <th>공사 주요 사업</th>
+                            <td>화폐 및 유가증권 제조<br>신분증, 카드의 제조, 발급<br>특수 압인 제품의 제조 및 인증<br>특수 제품의 제조<br>해외 수출<br>ICT 서비스</td>
+                          </tr>
+                          <tr>
+                            <th rowspan="4">직무 수행 내역</th>
+                            <td>웹/시스템 개발 운영</td>
+                          </tr>
+                          <tr>
+                            <td>IT시스템 서버 운영 관리</td>
+                          </tr>
+                          <tr>
+                            <td>디지털 인프라 관리</td>
+                          </tr>
+                          <tr>
+                            <td>시스템 관리</td>
+                          </tr>
+                          <tr>
+                            <th rowspan="4">필요지식</th>
+                            <td>웹/시스템 개발 운영</td>
+                          </tr>
+                          <tr>
+                            <td>IT시스템 서버 운영 관리</td>
+                          </tr>
+                          <tr>
+                            <td>디지털 인프라 관리</td>
+                          </tr>
+                          <tr>
+                            <td>시스템 관리</td>
+                          </tr>
+                          <tr>
+                            <th rowspan="4">필요 기술</th>
+                            <td>웹/시스템 개발 운영</td>
+                          </tr>
+                          <tr>
+                            <td>IT시스템 서버 운영 관리</td>
+                          </tr>
+                          <tr>
+                            <td>디지털 인프라 관리</td>
+                          </tr>
+                          <tr>
+                            <td>시스템 관리</td>
+                          </tr>
+                        </tbody>
+                    </table>
+                    <a href="붙임1.pdf" download ><button class="work_describe">자세한 직무 기술서 다운로드</button></a>
+                </div>
+                <button class="komsco_hyperlink" onclick="location.href='https://www.komsco.com/kor' ">한국조폐공사 홈페이지</button>
+            </div>
+            <div class="dream_recruit">
+                <h1 class="recruit_detail_title">2024년도 기준 한국조폐공사 모집 공고 정리(전산직)</h1>
+                <table class="recruit_detail">
+                    <thead>
+                      <tr>
+                        <th>전형구분</th>
+                        <th>채용분야</th>
+                        <th>채용예정인원(명)</th>
+                        <th>수행직무</th>
+                        <th>근무지</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>ICT 전형</td>
+                        <td>운영, 관리</td>
+                        <td>7</td>
+                        <td>디지털인프라 운영, 웹/시스템 개발 및 운영, 시스템 관리</td>
+                        <td>본사, ID본부</td>
+                      </tr>
+                    </tbody>
+                </table>
+                <h3 class="recruit_certificate_title">가점, 우대사항</h3>
+                <table class="recruit_certificate">
+                    <tbody>
+                      <tr>
+                        <th>한국사능력검정 1급 자격소지자</th>
+                        <td>만점의 1% 가점</td>
+                      </tr>
+                      <tr>
+                        <th rowspan="3">고급자격증 보유자(40점 만점)<br>*나의 계획 자격증*</th>
+                        <td>SQLD + ADsP + 정보처리기사</td>
+                      </tr>
+                      <tr>
+                        <td>SQLD + OCPJP + 정보처리기사</td>
+                      </tr>
+                      <tr>
+                        <td>SQLD + 빅데이터분석기사 + OCAJP + SQLD</td>
+                      </tr>
+                      <tr>
+                        <th>지역인재, 비수도권 지역균형인재 채용목표제</th>
+                        <td>매 전형 우대</td>
+                      </tr>
+                    </tbody>
+                </table>
+                <h3 class="recruit_plan_title">ICT 직무 세부전형계획</h3>
+                <table class="recruit_plan">
+                    <tbody>
+                      <tr>
+                        <th rowspan="4">1차 전형</th>
+                        <td>자기소개서</td>
+                      </tr>
+                      <tr>
+                        <td>코딩테스트</td>
+                      </tr>
+                      <tr>
+                        <td>직무자격</td>
+                      </tr>
+                      <tr>
+                        <td>직무교육</td>
+                      </tr>
+                      <tr>
+                        <th rowspan="2">2차 전형</th>
+                        <td>인성검사</td>
+                      </tr>
+                      <tr>
+                        <td>발표평가</td>
+                      </tr>
+                      <tr>
+                        <th>3차 전형</th>
+                        <td>블라인드 면접</td>
+                      </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="dream_why">
+              <h3>선정이유</h3>
+              <p>공공기관에서 프로그램을 개발하는 기회를 갖는다는 것은 모든 사람이 사용하는 중요한 소프트웨어를 만드는 일에 참여하는 것입니다.<br>
+                특히 디지털 취약계층의 문제점을 고려하여 이들을 위한 접근성과 지원이 중요합니다.<br>
+                프로그램 개발 시 접근성을 고려하여 간단한 사용자 인터페이스, 음성 인식, 화면 해설 등의 기능을 제공하고,<br>
+                프로그램을 누구나 쉽게 사용할 수 있도록 교육 자료와 지원 서비스를 제공하는 것이 필요합니다.<br>
+                또한, 사용자의 피드백을 바탕으로 프로그램을 지속적으로 개선하는 것도 중요합니다.<br>
+                이처럼 디지털 취약계층을 포함한 모든 사용자가 공평하게 디지털화의 혜택을 누릴 수 있도록 하겠다는 목표를 가지고 프로그램을 개발하고자 합니다.<br>
+                이런 제 목표를 수행하기 위해 많은 공공기관들 중 한국조폐공사를 선택한 이유는,<br>
+                이 기관이 국민의 신뢰와 보안을 최우선으로 하는 다양한 공적 플랫폼을 제작하고 관리하기 때문입니다.<br>
+                한국조폐공사는 특히 신분증, 위임장, 상품권 등의 발행과 관리에 있어 최고 수준의 보안성과 신뢰성을 요구받는 기관입니다.<br>
+                이러한 분야에서 접근성과 편리함을 동시에 고려하는 것은 매우 중요하며, 한국조폐공사에서 근무하면서 이러한 가치를 실현하는 데 기여하고 싶습니다.<br>
+                특히, 신뢰성과 접근성을 균형 있게 유지하는 소프트웨어 개발에 참여하여, 모든 사용자가 안전하고 편리하게 이용할 수 있는 플랫폼을 제공하고자 합니다.<br>
+                이를 통해 모든 사람에게 디지털의 편리함을 전달하고자하는 제 가치를 전달하고 싶습니다.
+            </div>
+        </section>
+        <section id="plan">
+            <p id="plan_title">취업 준비 계획</p>
+            <div id="plan_certificate">
+              <h2>&#128073;자격증&#128072;</h2>
+                <table>
+                    <tbody>
+                      <tr>
+                        <th>한국사능력검정</th>
+                        <td>현재 한국사 교양 듣는 중<br>8월 10일 시험 예정<br>D-DAY: <span id="historyTime"></span></td>
+                      </tr>
+                      <tr>
+                        <th>SQLD</th>
+                        <td>현재 데이터베이스 수업 열심히 듣고 복습하기<br>8월 24일 시험 예정<br>D-DAY: <span id="SQLDTime"></span></td>
+                      </tr>
+                      <tr>
+                        <th>정보처리기사</th>
+                        <td>3학년 겨울방학 때 준비해서 4학년 1학기 내에 취득 목표</td>
+                      </tr>
+                      <tr>
+                        <th>토익</th>
+                        <td>4학년 1학기 내에 목표 점수 도달 목표</td>
+                      </tr>
+                      <tr>
+                        <th>ADsP, OCPJP, 빅데이터분석기사, OCAJP</th>
+                        <td>4학년 때 시간이 맞는 시험으로 준비 예정</td>
+                      </tr>
+                    </tbody>
+                    </table>
+            </div>
+            <div id="plan_study">
+              <h2>&#128073;개인 공부&#128072;</h2>
+                <table>
+                    <tbody>
+                      <tr>
+                        <th>스프링, 스프링부트</th>
+                        <td>현재: 기본 CRUD, 개념 수준의 지식<br>목표: 프로젝트 진행 가능할 만한 정도로 공부하기<br>방법: 프로젝트 활동하기</td>
+                      </tr>
+                      <tr>
+                        <th>CS(서버, DB, 운영체제)</th>
+                        <td>현재: 학부 공부한 정도<br>목표: 면접 대비 가능할 정도로 공부하기<br>방법: 프로젝트 진행하면서 오답노트 작성하기</td>
+                      </tr>
+                      <tr>
+                        <th>JAVA</th>
+                        <td>현재: 학부 공부한 정도 및 안드로이드 토이 프로젝트 가능<br>목표: 적재적소에 필요한 코드를 작성할 수 있도록 공부하기<br>방법: 프로젝트하면서 공부하기 및 개념 도서 찾아보기</td>
+                      </tr>
+                      <tr>
+                        <th>코딩 테스트</th>
+                        <td>현재: 백준 silver<br>목표: 백준 Gold까지 도달하기<br>방법: 꾸준히 개념 정리하고 풀어보기<br>에디터에 의존해서 푸는 습관 고치기</td>
+                      </tr>
+                      <tr>
+                        <th>프로젝트</th>
+                        <td>현재: 창업동아리, 공모전 프로젝트 계획 중<br>목표: 결과보다는 산출물, 계획서를 꼼꼼히 설계하고 도출해내는 것에 집중하기</td>
+                      </tr>
+                    </tbody>
+                    </table>
+            </div>
+            <div class="cheer_up">
+              <h3>&#128154;제 꿈을 응원해주는 말을 적어주세요!!&#128154;</h3>
+              <form id="inputForm" class="cheer_up">
+                  <input type="text" id="userInput" required class="cheer_up" placeholder="예) 응원해 현지야!">
+                  <button type="submit" id="submitBtn" class="cheer_up">리스트에 추가하기</button>
+              </form>
+              <ul id="inputList" class="cheer_up"></ul>
+          </div>
+        </section>
+    </div>
+    <button onclick="backToTop()" id="btnBackToTop">Top</button>
+    <footer>
+        <nav class="footer_nav">
+            <a href="https://github.com/hyeonji0401">Github </a>|
+            <a href="https://velog.io/@chfhr/posts">Velog </a>|
+            <span>Email : ghdguswl13@gmail.com</span>
+        </nav>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/script.js" charset="UTF-8"></script>
+    <script>AOS.init();</script>
+    <script src="js/scroll.js" charset="UTF-8"></script>
+    <script src="js/fadein.js" charset="UTF-8"></script>
+    <script src="js/dday.js" charset="UTF-8"></script>
+    <script src="js/loading.js" charset="UTF-8"></script>
+    <script src="js/cheerUpList.js" charset="UTF-8"></script>
+</body>
+</html>

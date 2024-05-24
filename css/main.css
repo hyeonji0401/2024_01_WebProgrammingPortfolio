@@ -1,0 +1,71 @@
+#main{
+    opacity: 0;
+    animation: fadeIn 1s ease forwards; 
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+    
+    .main_introduce{
+        text-align: center;
+        padding-top: 100px;
+        padding-bottom: 200px;
+        h2, h3{
+            color:black;
+        }
+        img{
+            height: 300px;
+            width: 600px;
+        }
+    
+    }
+    
+    .main_skill{
+        padding-top: 50px;
+        padding-bottom: 200px;
+        text-align: center;
+        table{
+            margin-left: auto;
+            margin-right: auto;
+            
+        }
+        td{
+            height: 200px;
+            width: 200px;
+        }
+        td img{
+            max-width: 100%;
+        }
+    }
+    
+    .main_project{
+        padding-top: 50px;
+        padding-bottom: 200px;
+        text-align: center;
+        table{
+            margin-left: auto;
+            margin-right: auto;
+        }
+        td{
+            height: 500px;
+            width: 500px;
+        }
+        td img{
+            max-width: 100%;
+        }
+    
+        td span{
+            font-weight:bold;
+        }
+    
+    }
+
+    #loading{
+        margin-top: 100px;
+    }
+    
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}

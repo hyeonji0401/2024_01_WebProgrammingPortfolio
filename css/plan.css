@@ -1,0 +1,79 @@
+#plan{
+    display: none;
+    opacity: 0;
+    animation: fadeIn 1s ease forwards; 
+    text-align: center;
+
+    #plan_title{
+        font-size: 2rem;
+        font-weight: bolder;
+        color: rgb(87, 26, 14);
+    }
+    #plan_certificate{
+        margin: 100px;
+    }
+    #plan_study{
+        margin: 200px;
+    }
+    .cheer_up{
+        text-align: center;
+        #inputForm{
+            #userInput{
+                margin-bottom: 30px;
+                border-top:none;
+                border-right: none;
+                border-left: none;
+                border-bottom: 1px solid black;
+            }
+            #submitBtn{
+                background-color: rgb(87, 26, 14);
+                color: white;
+                border-radius: 10px;
+                padding: 5px;
+            }
+        }
+        ul {
+            margin: 0 auto;
+            width: 70%;
+            list-style-type: none;
+            padding: 0;
+            margin-bottom: 100px;
+        }
+        li {
+            background: #f9f9f9;
+            padding: 10px;
+            border: 1px solid #ddd;
+            margin-bottom: 5px;
+            border-radius: 4px;
+        }
+    }
+    
+    table{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    td{
+        background-color: whitesmoke;
+        border: 2px solid rgb(2, 2, 2);
+        height: 10%;
+        width: 20%;
+        padding: 20px;
+        border-radius: 10px;
+    }
+    th{
+        border: 2px solid rgb(87, 26, 14);
+        background-color: rgb(87, 26, 14);
+        color: white;
+        height: 10%;
+        width: 10%;
+        font-weight: bold;
+        border-radius: 10px;
+    }
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}

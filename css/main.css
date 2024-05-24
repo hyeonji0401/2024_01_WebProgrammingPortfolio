@@ -3,6 +3,12 @@
     animation: fadeIn 1s ease forwards; 
     overflow: auto;
     scroll-snap-type: y mandatory;
+
+    audio{
+        margin-top: 10px;
+        width: 300px;
+        height: 30px;
+    }
     
     .main_introduce{
         text-align: center;

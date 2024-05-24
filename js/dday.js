@@ -6,7 +6,7 @@ function find_day(){
   const SQLD = new Date("2024-8-24");
   const today = new Date();  //밀리세컨드 단위의 시간 표시 1초=1000
   
-  day_gap1 = history - today;  //크리스마스까지 남은 밀리세컨드 초 값
+  day_gap1 = history - today;  //시험까지 남은 밀리세컨드 초 값
   day_gap2 = SQLD - today;
 
   const day1 = Math.floor(day_gap1 / (1000*60*60*24));  //디데이까지 남은 밀리세컨드초 / 하루의 밀리세컨드초 = 남은 일수
